@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">SCSL</string>
+    <string name="activity_title_login">Safe Care, Saving Lives</string>
+    <string name="activity_profile_entry">Profile Entry</string>
+    <string name="invalid_credentials">Invalid Credentials</string>
+    <string name="please_give_username_and_password">Please give username and password</string>
+    <string name="please_give_username">Please give username</string>
+    <string name="please_give_password">Please give password</string>
+    <string name="title_app">Safe Care, Saving Lives</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="process">Process</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="outcome">Outcome</string>
+    <string name="title_activity_sncuativity">Safe Care, Saving Lives</string>
+    <string name="engangement_score">Engagement Score</string>
+    <string name="ahi_associate">AHI Associate</string>
+    <string name="logout">Logout</string>
+    <string name="sync">Sync</string>
+    <string name="sncu_nicu_dataentry">SNCU/NICU Data Entry</string>
+    <string name="deo_name">DEO Name : </string>
+    <string name="state">State : </string>
+    <string name="district">District : </string>
+    <string name="facility">Facility</string>
+
+    <!--used for indicator selection dialog-->
+    <string name="close_image_description">close button</string>
+    <string name="add_indicator_dialog_title">Add Indicator</string>
+    <string name="select_core_area">Core Area</string>
+    <string name="table_head_slno">Sl. No.</string>
+    <string name="table_head_indicator">Indicators</string>
+    <string name="table_head_select">Select</string>
+    <string name="indicator_submit_button">Submit</string>
+    <string name="login_logo_desc">Login logo</string>
+    <string name="choose_selection_icon">Choose Selection Icon</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="month_selection">Month Selection</string>
+    <string name="sepsis">Sepsis</string>
+    <string name="submit">Submit</string>
+    <string name="menu">Menu</string>
+    <string name="month">January 2017</string>
+    <string name="decimal_format">##.0</string>
+    <string name="percentage_symbol">%</string>
+    <string name="logging_in">Logging in</string>
+    <string name="please_wait">Please wait &#8230;</string>
+    <string name="ok">OK</string>
+    <string name="internet_check">Please check internet</string>
+    <string name="error">Error</string>
+    <string name="login_timeout_in_second">600</string>
+    <string name="sync_timeout_in_second">180</string>
+    <string name="invalid_timeout">Invalid timeout time</string>
+    <string name="not_available">N/A</string>
+    <string name="choose_core_area_title">Choose Core Area</string>
+  <!--  <string name="server_url">http://safecaresavinglives.org/SCSLUAT/</string>-->
+    <string name="server_url">http://safecaresavinglives.org/</string>
+    <!--<string name="server_url">http://192.168.1.192:8080/SCSL/</string>-->
+    <!--<string name="server_url">http://devserver.sdrc.co.in:8095/scsl/</string>-->
+
+    <string name="server_not_found">Server not found, please contact admin.</string>
+    <string name="server_error">Server error, please contact admin</string>
+
+    <!--error message-->
+    <string name="this_application_can_not_be_run_on_this_device">Application is not compatible on this device.</string>
+    <string name="numerator_can_not_greater_than_denominator">Numerator should not be greater than denominator</string>
+    <string name="No_feilds_in_outcome_page_can_be_empty">No feilds in outcome page can be empty</string>
+    <string name="No_feilds_in_intermediate_page_can_be_empty">Some fields are left blank in the Intermediate section</string>
+
+    <string name="syncing">Syncing</string>
+    <string name="sync_success">Sync success!</string>
+    <string name="request_timeout">Request timeout</string>
+    <string name="no_data_to_sync">No data to sync</string>
+    <string name="clear_data">Last user transactional data will be erased. Are you sure you want to login?</string>
+    <string name="invalid_user_area_mapping">Invalid user area mapping, please contact admin.</string>
+    <string name="unsynced_record_found">Unsynced records found.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="sync_status">sync_status</string>
+    <string name="please_fill_last_month_data">Please fill the previous month data</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="selected_month">Selected Month</string>
+    <string name="cancel">Cancel</string>
+    <string name="synicing"> Syncing</string>
+    <string name="initializing">Initializing</string>
+    <string name="indicator_name">Indicator Name : </string>
+    <string name="error_message">Error message : </string>
+    <string name="sync_result">Sync Result</string>
+    <string name="no_indicators">No indicators present</string>
+    <string name="n">N</string>
+    <string name="d">D</string>
+    <string name="confirm_layout">Are you sure you want to Logout?</string>
+    <string name="choose_facility">Choose Facility</string>
+    <string name="choose_month">Choose Month</string>
+    <string name="all_indicators_mapped">All indicators are mapped</string>
+    <string name="select_core_area_to_add_indicator">Please select a core area to add indicator</string>
+    <string name="due_date_expired">The due date for data submission has already expired</string>
+    <string name="data_submitted_on">Data submitted on</string>
+    <string name="profile_entry_is_dissable">profileEntryIsDissable</string>
+    <string name="entry_model">entryModel</string>
+    <string name="save_profile_entry_msg">Are you sure you want continue with these data?</string>
+    <string name="please_enter_inborn_admission">Please enter number of inborn admission</string>
+    <string name="please_enter_outborn_admission">Please enter number of outborn admission</string>
+    <string name="please_enter_normal_deleveries">Please enter number of normal deleveries</string>
+    <string name="please_enter_live_birth">Please enter number of live birth</string>
+    <string name="please_enter_c_section_deleveries">Please enter number of c-section deleveries</string>
+    <string name="profile_entry_json">ProfileEntryJson</string>
+    <string name="warning_dialog_title">Warning</string>
+    <string name="button_next">Next</string>
+    <string name="button_save_and_next">Save &amp; Next</string>
+    <string name="please_click_back_again_to_exit">Please click BACK again to exit</string>
+    <string name="status_before_reset">status</string>
+    <string name="remark_before_reset">remark</string>
+    <string name="is_reset">reset</string>
+    <string name="status_color">color</string>
+    <string name="is_ramark">isRemark</string>
+
+    //new key added for versioncode check
+    <string name="version_code">versionCode</string>
+    <string name="version_name">versionName</string>
+    <string name="alert_msg_version_change">"SCSL application has been successfully updated. Data pertaining to older version of the application has been erased from your local device.</string>
+
+</resources>

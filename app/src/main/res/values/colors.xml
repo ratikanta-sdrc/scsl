@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5FB258</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#214757</color>
+    <color name="colorAccentTransperent">#CC5FB258</color>
+
+    <color name="greyBlack">#333A3B</color>
+    <color name="purple">#A4A1C2</color>
+    <color name="blue">#98B0E0</color>
+    <color name="yellow">#428EAD</color>
+    <color name="orange">#F0A997</color>
+    <color name="pink">#DEB9C9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_yellow">#f0c658</color>
+
+    <color name="grey">#CCE1E2E4</color>
+    <color name="lightGrey">#EEEFF1</color>
+
+    <color name="red">#f07258</color>
+    <color name="green">#aedc5c</color>
+    <color name="cowdonk">#7a594b</color>
+    <color name="greyText">#454649</color>
+    <color name="darkBlue">#214757</color>
+    <color name="darkGreen">#46803D</color>
+    <color name="light_blue">#428EAD</color>
+    <color name="lighter_blue">#9EBFD0</color>
+    <color name="lightest_blue">#cedfe7</color>
+    <color name="lighter_grey">#33000000</color>
+    <color name="transparent">#80ffffff</color>
+
+    <color name="selet_disabled_darkBlue">#3d809c</color>
+    <color name="selet_disabled_lighter_blue">#b3d8ea</color>
+    <color name="selet_disabled_light_blue">#59bce4</color>
+
+</resources>

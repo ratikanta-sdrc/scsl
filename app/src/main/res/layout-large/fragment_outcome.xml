@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirty">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/eighteen"
+            android:paddingRight="@dimen/eighteen">
+
+            <TableLayout
+                android:id="@+id/outcomeTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"/>
+
+            <Button
+                android:id="@+id/submit_button_for_sncu"
+                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:layout_width="@dimen/onefourty"
+                android:layout_height="@dimen/fourtyfive"
+                android:layout_below="@+id/outcomeTableLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/sixty"
+                android:layout_marginBottom="@dimen/thirty"
+                android:background="@color/colorAccent"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/empty_outcome_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

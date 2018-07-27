@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/four_hundred"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <TextView
+        android:id="@+id/area_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty"
+        android:text="@string/menu"
+        android:textSize="@dimen/twenty"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/twenty"
+        android:paddingLeft="@dimen/twenty"
+        android:paddingRight="@dimen/twenty"
+        android:background="@color/darkGreen"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/engangement_score"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/ten"
+        android:paddingLeft="@dimen/twenty"
+        android:paddingRight="@dimen/twenty"
+        style="@android:style/TextAppearance.DeviceDefault.Small"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ahi_associate"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/onethirty"
+        android:paddingLeft="@dimen/twenty"
+        android:paddingRight="@dimen/twenty"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        android:background="@color/white"
+        android:layout_margin="@dimen/twenty"/>
+
+    <TextView
+        android:id="@+id/engagement_sync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sync"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/five"
+        android:paddingLeft="@dimen/twenty"
+        android:paddingRight="@dimen/twenty"
+        style="@android:style/TextAppearance.DeviceDefault.Small"/>
+
+    <TextView
+        android:id="@+id/engagement_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/five"
+        android:paddingLeft="@dimen/twenty"
+        android:paddingRight="@dimen/twenty"
+        style="@android:style/TextAppearance.DeviceDefault.Small"/>
+
+</LinearLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:layout_width="@dimen/thirty"
+            android:layout_height="@dimen/thirty"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/twenty"
+            android:layout_marginTop="@dimen/twenty"
+            android:background="@drawable/ic_close_black_24dp"
+            android:contentDescription="@string/close_image_description" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/indicator_title"
+        style="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/sixty"
+        android:text="@string/add_indicator_dialog_title"
+        android:textColor="@color/black" />
+
+
+    <View
+        android:id="@+id/dialog_title_border"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two"
+        android:layout_below="@id/indicator_title"
+        android:layout_marginLeft="@dimen/onehundred"
+        android:layout_marginRight="@dimen/onehundred"
+        android:background="@color/greyBlack" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_title_border"
+        android:layout_marginTop="@dimen/fourteen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fourty"
+                android:layout_marginLeft="@dimen/fivetyfive"
+                android:layout_marginRight="@dimen/fivetyfive"
+                android:layout_marginTop="@dimen/twentyfive"
+                android:elevation="@dimen/eight">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/core_area_textbox"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:hint="@string/select_core_area"
+                            android:paddingLeft="@dimen/fourteen"
+                            android:paddingRight="@dimen/fourteen" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/select_core_area_layout"
+                        android:layout_width="@dimen/fourtytwo"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/dropdown_menu_icon"
+                        android:orientation="horizontal" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linear_header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/thirty">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one"
+                    android:background="@color/greyBlack" />
+
+                <LinearLayout
+                    android:id="@+id/list_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:baselineAligned="false"
+                    android:weightSum="10">
+
+
+                    <View
+                        android:layout_width="@dimen/one"
+                        android:layout_height="match_parent"
+                        android:background="@color/greyBlack" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.5"
+                        android:padding="@dimen/six">
+
+                        <TextView
+                            android:id="@+id/sl_no_tv"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/table_head_slno" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/one"
+                        android:layout_height="match_parent"
+                        android:background="@color/greyBlack" />
+
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="6.5"
+                        android:padding="@dimen/six">
+
+                        <TextView
+                            android:id="@+id/indicator_name_tv"
+                            style="@android:style/TextAppearance.DeviceDefault.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/table_head_indicator" />
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="@dimen/one"
+                        android:layout_height="match_parent"
+                        android:background="@color/greyBlack" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/zero"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/check_box_title"
+                                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/table_head_select" />
+
+                            <CheckBox
+                                android:id="@+id/select_all_indicators"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/greyBlack"
+                                android:scaleX="0.9"
+                                android:scaleY="0.9" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/one"
+                        android:layout_height="match_parent"
+                        android:background="@color/greyBlack" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/one"
+                    android:background="@color/greyBlack" />
+
+                <TableLayout
+                    android:id="@+id/indicators"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/no_indicators_tv"
+                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:text=""
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/submit_button"
+                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:layout_width="@dimen/onefourty"
+                android:layout_height="@dimen/fourtyfive"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/eighteen"
+                android:background="@color/colorAccent"
+                android:textColor="@color/white"
+                android:text="@string/indicator_submit_button"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

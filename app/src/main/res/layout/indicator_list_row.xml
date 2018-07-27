@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/list_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="@dimen/one"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/greyBlack" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:padding="@dimen/four">
+
+            <TextView
+                android:id="@+id/sl_no_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/twelve" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/one"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/greyBlack" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="6"
+            android:padding="@dimen/four">
+
+            <TextView
+                android:id="@+id/indicator_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/twelve" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/one"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/greyBlack" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5">
+
+            <CheckBox
+                android:id="@+id/select_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:buttonTint="@color/greyBlack"
+                android:scaleX="0.75"
+                android:scaleY="0.75" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/one"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/greyBlack" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        android:layout_below="@id/list_row"
+        android:background="@color/greyBlack" />
+
+</RelativeLayout>

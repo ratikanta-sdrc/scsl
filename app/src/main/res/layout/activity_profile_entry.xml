@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scsl_bg"
+    android:fitsSystemWindows="true"
+    tools:context="org.sdrc.scslmobile.activity.ProfileEntryActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay"
+            app:titleTextAppearance="@style/Toolbar.TitleTextMedium"
+            app:titleTextColor="@color/white"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+            <TextView
+                android:id="@+id/profile_time_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/twenty"
+                android:text="@string/month"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteen" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        android:paddingBottom="10dp"
+        android:padding="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/parentLayout">
+            <TextView
+                android:id="@+id/profileEntryStatus_tv"
+                style="@android:style/TextAppearance.DeviceDefault.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="@dimen/twelve"
+                android:layout_marginLeft="@dimen/twelve"
+                android:text="@string/due_date_expired"
+                android:maxLines="2"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/show_more_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/fifteen"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_below="@id/profileEntryStatus_tv"
+                android:layout_alignParentRight="true"
+                style="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textColor="@color/blue"
+                android:layout_marginBottom="@dimen/four"
+                android:text="Remark"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/noLaborRoomLayout"
+                android:layout_below="@id/show_more_profile"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/profile_layout21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_vertical"
+                    android:paddingTop="4sp"
+                    android:paddingBottom="4sp"
+                    android:background="@color/grey"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="10sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="1."
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/is_lr_tv"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="Labour room available"
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/is_lr_edt"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="1.5"
+                        android:maxLength="7"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:textColor="@color/greyText" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/profile_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingTop="4sp"
+                    android:paddingBottom="4sp"
+
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="10sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="2."
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/no_of_inborn_addmission_tv"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="No. of inborn admission"
+                        android:textColor="@color/greyText" />
+
+                    <EditText
+                        android:id="@+id/no_of_inborn_addmission"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="1.5"
+                        android:maxLength="7"
+                        android:textColor="@color/greyText"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4sp"
+                    android:paddingBottom="4sp"
+                    android:background="@color/grey"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="10sp"
+                        android:id="@+id/outBornSlNoTv"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="3."
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/no_of_outborn_addmission_tv"
+                        android:layout_width="0sp"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="No. of outborn admission"
+                        android:textColor="@color/greyText" />
+
+                    <EditText
+                        android:id="@+id/no_of_outborn_addmission"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="1.5"
+                        android:maxLength="7"
+                        android:textColor="@color/greyText"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="4sp"
+
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="10sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="4."
+                        android:id="@+id/noOfAdmissionSlNoTv"
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/no_of_addmission_tv"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="No, of admission"
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/no_of_addmission"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:layout_weight="1.5"
+                        android:textColor="@color/greyText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_layout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:background="@color/grey"
+                    android:paddingBottom="4sp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="10sp"
+                        android:text="5."
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/percent_of_inborn_tv"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="% of inborn babies to total admission"
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/percent_of_inborn"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="1.5"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:textColor="@color/greyText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_layout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="4sp"
+
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="10sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="6."
+                        android:id="@+id/perOfOutBornBabiesTv"
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/percent_of_outborn_tv"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="% of outborn babies to total admission"
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/percent_of_outborn"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:layout_weight="1.5"
+                        android:textColor="@color/greyText" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/labour_room_related_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noLaborRoomLayout">
+
+                <LinearLayout
+                    android:id="@+id/profile_layout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4sp"
+                    android:paddingBottom="4sp"
+                    android:background="@color/grey"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="10sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="7."
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/no_of_csection_tv"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="No. of c section deliveries"
+                        android:textColor="@color/greyText" />
+
+                    <EditText
+                        android:id="@+id/no_of_csection"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="1.5"
+                        android:maxLength="7"
+                        android:textColor="@color/greyText"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_layout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4sp"
+                    android:paddingBottom="4sp"
+                    android:layout_below="@+id/profile_layout6"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="10sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="8."
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/no_of_normal_delivery_tv"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="No. of normal deliveries"
+                        android:textColor="@color/greyText" />
+
+                    <EditText
+                        android:id="@+id/no_of_normal_delivery"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="1.5"
+                        android:maxLength="7"
+                        android:textColor="@color/greyText"
+                        android:background="@android:drawable/editbox_background_normal"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_layout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4sp"
+                    android:paddingBottom="4sp"
+                    android:background="@color/grey"
+                    android:layout_below="@+id/profile_layout7"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="10sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="9."
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/no_of_total_delivery_tv"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="No. of total deliveries"
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/no_of_total_delivery"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:layout_weight="1.5"
+                        android:textColor="@color/greyText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_layout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_layout8"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4sp"
+
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="10sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="10."
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/percent_of_csection_tv"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="% of c section"
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/percent_of_csection"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:layout_weight="1.5"
+                        android:textColor="@color/greyText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_layout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_layout9"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4sp"
+                    android:background="@color/grey"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="10sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="11."
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/percent_of_normal_deleveries_tv"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="% of normal deleveries"
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/percent_of_normal_deleveries"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:layout_weight="1.5"
+                        android:textColor="@color/greyText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_layout11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4sp"
+                    android:paddingBottom="4sp"
+                    android:layout_below="@+id/profile_layout10"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingLeft="10sp"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="12."
+                        android:textColor="@color/greyText" />
+
+                    <TextView
+                        android:id="@+id/no_of_livebirth_tv"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:text="No. of live births "
+                        android:textColor="@color/greyText" />
+
+                    <EditText
+                        android:id="@+id/no_of_livebirth"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="1.5"
+                        android:maxLength="7"
+                        android:textColor="@color/greyText"
+                        style="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:inputType="number" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/labour_room_related_layout"></View>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:fitsSystemWindows="true">
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@color/darkBlue"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@color/darkBlue"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:text="Next" />
+    </RelativeLayout>
+</RelativeLayout>

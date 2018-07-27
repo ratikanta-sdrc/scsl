@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scsl_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.sdrc.scslmobile.activity.EngagementActivity"
+    tools:showIn="@layout/app_bar_engagement">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twentytwo"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/eight"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/grey_border"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/facility_txt"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.5"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/facility"
+                    android:maxLines="1"
+                    android:padding="@dimen/ten"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/facility_icon"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/choose_selection_icon"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dropdown_menu_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_weight="1"
+                android:background="@drawable/grey_border"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/month_selection_txt"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.5"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/month_selection"
+                    android:maxLines="1"
+                    android:padding="@dimen/ten"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/month_selection_icon"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/choose_selection_icon"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dropdown_menu_icon" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/engagement_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thirty"
+            android:nestedScrollingEnabled="false"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+
+</RelativeLayout>
